@@ -1,0 +1,16 @@
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule,JsonpModule } from '@angular/http';
+import { AppComponent }  from './app.component';
+import { JurisdictionComponent} from './components/jurisdiction.component';
+import { HeaderComponent } from './components/header.component';
+import { FooterComponent } from './components/footer.component';
+import { JumbotronComponent } from './components/jumbotron.component';
+import { SectionsComponent } from './components/sections.component';
+
+@NgModule({
+  imports:      [ BrowserModule,HttpModule,JsonpModule ],
+  declarations: [ AppComponent,JurisdictionComponent,HeaderComponent,FooterComponent,JumbotronComponent,SectionsComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
